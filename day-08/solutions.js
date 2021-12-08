@@ -62,7 +62,6 @@ const doesMatch = (a, b) => a.split('').sort().join('') === b.split('').sort().j
 const decode = (entries) => {
   const decoded = entries.map(entry => {
     const [patterns, output] = entry;
-
     const six = getSix(patterns);
 
     const decodedOutput = output.map(signal => {
